@@ -34,8 +34,6 @@ class DadosEntrada(BaseModel):
     SGOT_AST: float
     SGOT_ALT: float
     gamma_GTP: float
-    SMK_stat_type_cd: float
-    DRK_YN: str
 
 class ServicoPreditor:
     def __init__(self):

@@ -21,7 +21,7 @@ class Preprocessador:
         df = pd.DataFrame([dados])
 
             # Codifica colunas categóricas
-        df[['sex', 'DRK_YN']] = self.encoder.transform(df[['sex', 'DRK_YN']])
+        df[['sex']] = self.encoder.transform(df[['sex']])
 
         # Remove colunas que não foram usadas no treino
         if 'SMK_stat_type_cd' in df.columns:
